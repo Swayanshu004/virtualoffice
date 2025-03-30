@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import { IoNotificationsOutline } from "react-icons/io5";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { FaChalkboardTeacher } from "react-icons/fa";
-import { IoGameControllerOutline } from "react-icons/io5";
+import { LuGamepad2 } from "react-icons/lu";
 
 
 function Navbar() {
   return (
-    <div className='w-screen px-10 py-5 flex items-center justify-between text-lg font-semibold bg-white/80 backdrop-blur-2xl fixed'>
+    <div className='w-screen px-5 py-3 flex items-center justify-between text-lg font-semibold bg-white/80 backdrop-blur-2xl fixed'>
         <nav>
             <Link to="/">
                 <h1 className='text-3xl font-bold text-blue-700'>VIRTUALOFFICE</h1>
@@ -28,7 +28,7 @@ function Navbar() {
             </Link>
             <Link to="/chill">
                 <div className='flex items-center gap-2 hover:bg-neutral-200 duration-150 ease-in-out px-2 py-2 rounded-md'>
-                    <IoGameControllerOutline />
+                    <LuGamepad2/>
                     <h3>Chill Area</h3>
                 </div>
             </Link>

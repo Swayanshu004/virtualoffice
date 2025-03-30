@@ -11,9 +11,11 @@ function App() {
     <div>
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <div className='pt-20 px-5'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   )
