@@ -12,12 +12,12 @@ interface areatype {
 
 function Officeareacard({area}:{area:areatype}) {
   return (
-    <div>
+    <div className='w-full'>
         <Link to={area.path} key={area.name} className=''>
-            <div className='w-full md:w-80 bg-blue-50 text-neutral-900 hover:bg-blue-100 duration-500 p-5 mt-5 border-[1px] border-neutral-300 rounded-md'>
+            <div className='w-full md:w-80 bg-blue-50 text-neutral-900 hover:bg-blue-100 duration-500 p-5 mt-5 border-[1px] border-blue-300 rounded-md'>
                 <h1 className="font-bold text-xl">{area.name}</h1>
                 <h3 className='text-sm'>{area.description}</h3>
-                <h3 className="text-right mt-5 font-semibold">{area.accupencyCurrent}/{area.accupencyTotal} occupied</h3>
+                <h3 className="text-right mt-5 font-semibold">{area.accupencyCurrent} / {area.accupencyTotal} occupied</h3>
             </div>
         </Link>
     </div>

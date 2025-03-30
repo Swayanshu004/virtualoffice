@@ -102,8 +102,8 @@ function Workspace() {
         <div>
             {teams.map((team, i) => (
             <div key={i} className="w-full mt-5">
-                <h3 className="text-xl font-bold bg-blue-400 px-5 py-2">{team.name} Team</h3>
-                <div className="w-full flex flex-wrap flex-col md:flex-row gap-5">
+                <h3 className="text-xl font-bold border-b-[1px] px-5 py-2">{team.name} Team</h3>
+                <div className="w-full flex flex-wrap flex-col md:flex-row gap-x-10">
                     {team.members.map((member) => (
                         <Usercard_team user={member}/>
                     ))}

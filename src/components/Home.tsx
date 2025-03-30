@@ -100,18 +100,21 @@ function Home() {
 
   return (
     <div className="w-full">
-        <div className="px-5">
-            <h1 className="font-bold text-2xl">OFFICE</h1>
-            <Clock />
+        <div className="w-full">
+            <div className="bg-blue-200 px-5 py-3 rounded-md">
+                <h1 className="font-bold text-2xl">OFFICE</h1>
+                <Clock />
+            </div>
             <div className="w-full flex flex-col md:flex-row justify-between">
-                <div className="md:w-3/4 h-fit flex gap-10 flex-wrap">
-                    {areas.map((item, index)=>(
-                        <Officeareacard area={item} key={index}/>
+                <div className="w-full lg:w-3/4 h-fit grid grid-cols-1 lg:grid-cols-3 gap-2.5">
+                    {areas.map((item, index) => (
+                        <Officeareacard area={item} key={index} />
                     ))}
                 </div>
-                <div className="w-full max-h-screen overflow-y-scroll scrollbar-hide md:w-1/4 my-5 p-3 rounded-lg border-[1px] border-neutral-300">
+
+                <div className="w-full lg:w-1/4 max-h-screen overflow-y-scroll scrollbar-hide py-5 p-3 mt-5 rounded-lg bg-blue-50 border-[1px] border-blue-300">
                     <h1 className="font-bold text-2xl">USERS</h1>
-                    <div className="flex justify-between">
+                    <div className="flex flex-col lg:flex-row justify-between">
                         <h2 className="py-1 px-2 rounded-lg flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-green-600"></div>{"6"} Online</h2>
                         <h2 className="py-1 px-2 rounded-lg flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-yellow-400"></div>{"3"} In Meeting</h2>
                         <h2 className="py-1 px-2 rounded-lg flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-red-600"></div>{"2"} Busy</h2>
