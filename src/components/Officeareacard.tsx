@@ -9,6 +9,7 @@ interface areatype {
     path: string;
 }
 
+
 function Officeareacard({area}:{area:areatype}) {
   return (
     <div>

@@ -34,8 +34,8 @@ function Navbar() {
             </Link>
         </nav> */}
         <nav className='flex items-center gap-1 md:gap-5'>
-            <Link to="/notification" className='hover:bg-blue-100 duration-150 ease-in-out px-2 py-2 rounded-md'><IoNotificationsOutline className='text-black text-2xl'/></Link>
-            <Link to="/profile" className='hover:bg-blue-100 duration-150 ease-in-out px-2 py-2 rounded-md'>Profile</Link>
+            <Link to="/notification" className='hover:bg-blue-100 duration-500 ease-in-out px-2 py-2 rounded-md'><IoNotificationsOutline className='text-black text-2xl'/></Link>
+            <Link to="/profile" className='hover:bg-blue-100 duration-500 ease-in-out px-2 py-2 rounded-md'>Profile</Link>
         </nav>
     </div>
   )
