@@ -14,10 +14,10 @@ function Home() {
           path: "/workspace",
         },
         {
-          name: "MEETING ROOM 1",
-          description: "Your dedicated workspace",
-          accupencyTotal: 15,
-          accupencyCurrent: 7,
+          name: "MEETING ROOMS",
+          description: "Dedicated workspace",
+          accupencyTotal: 5,
+          accupencyCurrent: 2,
           path: "/meeting",
         },
         {
@@ -26,13 +26,6 @@ function Home() {
             accupencyTotal: 10,
             accupencyCurrent: 2,
             path: "/chill",
-        },
-        {
-          name: "MEETING ROOM 2",
-          description: "Your dedicated workspace",
-          accupencyTotal: 20,
-          accupencyCurrent: 13,
-          path: "/meeting",
         },
       ] as const;
     const users = [

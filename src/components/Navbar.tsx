@@ -10,7 +10,7 @@ function Navbar() {
     <div className='w-screen px-5 py-3 flex items-center justify-between text-lg font-semibold bg-white/80 backdrop-blur-2xl fixed'>
         <nav>
             <Link to="/">
-                <h1 className='text-3xl font-bold text-blue-700'>VIRTUALOFFICE</h1>
+                <h1 className='text-3xl font-bold text-blue-950'>VIRTUALOFFICE</h1>
             </Link>
         </nav>
         {/* <nav className='flex gap-10'>

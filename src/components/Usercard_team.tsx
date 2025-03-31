@@ -31,9 +31,9 @@ function Usercard_team({user}:{user:usertype_team}) {
             <h3 className='flex items-center gap-2 font-medium'><div className={`w-2 h-2 rounded-full bg-${color[user.status] == "yellow" ? "yellow-400" : `${color[user.status]}-600`}`}></div>{user.status}</h3>
         </div>
         <div className='flex items-center justify-between mt-5'>
-            <button className='px-2 py-1 bg-white hover:bg-blue-200 rounded-md flex items-center gap-2' onClick={()=>handleClick("voice",user.name)}><MdOutlineKeyboardVoice/>voice</button>
-            <button className='px-2 py-1 bg-white hover:bg-blue-200 rounded-md flex items-center gap-2' onClick={()=>handleClick("video",user.name)}><IoVideocamOutline/>video</button>
-            <button className='px-2 py-1 bg-white hover:bg-blue-200 rounded-md flex items-center gap-2' onClick={()=>handleClick("chat",user.name)}><IoChatboxEllipsesOutline/>chat</button>
+            <button className='px-2 py-1 bg-white hover:bg-blue-200 duration-300 rounded-md flex items-center gap-2 cursor-pointer' onClick={()=>handleClick("voice",user.name)}><MdOutlineKeyboardVoice/>voice</button>
+            <button className='px-2 py-1 bg-white hover:bg-blue-200 duration-300 rounded-md flex items-center gap-2 cursor-pointer' onClick={()=>handleClick("video",user.name)}><IoVideocamOutline/>video</button>
+            <button className='px-2 py-1 bg-white hover:bg-blue-200 duration-300 rounded-md flex items-center gap-2 cursor-pointer' onClick={()=>handleClick("chat",user.name)}><IoChatboxEllipsesOutline/>chat</button>
         </div>
     </div>
   )
