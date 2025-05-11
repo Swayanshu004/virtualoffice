@@ -6,6 +6,8 @@ import Navbar from './components/Navbar';
 import Workspace from './components/Workspace';
 import Meetingroom from './components/Meetingroom';
 import Chill from './components/Chill';
+import Video from './components/Video';
+import CodeCanvas from './components/CodeCanvas';
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
             <Route path="/workspace" element={<Workspace />} />
             <Route path="/meeting" element={<Meetingroom />} />
             <Route path="/chill" element={<Chill />} />
+            <Route path="/video" element={<Video />} />
+            <Route path="/code-canvas" element={<CodeCanvas />} />
           </Routes>
         </div>
       </BrowserRouter>
